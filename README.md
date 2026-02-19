@@ -10,6 +10,13 @@ Back-end
  REST APIs
 Database 
  SQlLite
-#High Level Architecture
+# High Level Architecture
 
 User → Browser → Frontend → Backend API → Database
+# Deployment strategy 
+Development & Future
+ Localhost
+ Docker
+ Cloud hosting
+ CI/CD
+ 
