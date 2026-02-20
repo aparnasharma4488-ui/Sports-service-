@@ -22,64 +22,64 @@ Supports easy orchestration of application and database services.
 # Project Overview
 The objective of this project is to: Develop a high-performance backend service using Rust. Containerize the application using multi-stage Docker builds. Configure Docker Compose to orchestrate: Sports Service container Database container Ensure: Lightweight image size Secure configuration Environment portability Production-ready setup
 # Objectives
-.Develop a Rust-based Sports backend service with REST APIs.
+- Develop a Rust-based Sports backend service with REST APIs.
 
-.Integrate the application with a relational database. 
+- Integrate the application with a relational database. 
 
-.Containerize the service using multi-stage Docker builds. 
+- Containerize the service using multi-stage Docker builds. 
 
-.Use Docker Compose to manage application and database containers. 
+- Use Docker Compose to manage application and database containers. 
 
-.Ensure portability, security, and optimized deployment. 
+- Ensure portability, security, and optimized deployment. 
 # Tech Stack 
-. Programming Language: Rust 
+- Programming Language: Rust 
 
-. Web Framework: Actix-web / Rocket 
+- Web Framework: Actix-web / Rocket 
 
-. Database: PostgreSQL / MySQL 
+- Database: PostgreSQL / MySQL 
 
-. ORM / DB Library: Diesel / SQLx 
+- ORM / DB Library: Diesel / SQLx 
 
-. Containerization: Docker 
+- Containerization: Docker 
 
-. Orchestration: Docker Compose 
+- Orchestration: Docker Compose 
 
-. Version Control: Git & GitHub 
+- Version Control: Git & GitHub 
 
-. API Testing: Postman 
+- API Testing: Postman 
 
-. Build Tool: Cargo 
+- Build Tool: Cargo 
 # Key Features 
-. RESTful APIs for managing Teams, Matches, and Scores 
+- RESTful APIs for managing Teams, Matches, and Scores 
 
-. CRUD operations (Create, Read, Update, Delete) 
+- CRUD operations (Create, Read, Update, Delete) 
 
-. Database integration (PostgreSQL/MySQL) 
+- Database integration (PostgreSQL/MySQL) 
 
-. Multi-stage Docker build for optimized image size 
+- Multi-stage Docker build for optimized image size 
 
-. Docker Compose orchestration (App + Database) 
+- Docker Compose orchestration (App + Database) 
 
-. Environment-based configuration using .env 
+- Environment-based configuration using .env 
 
-. Secure container setup (non-root user, minimal base image) 
+- Secure container setup (non-root user, minimal base image) 
 
-. One-command deployment using docker-compose up 
+- One-command deployment using docker-compose up 
 
-. Portable and production-ready architecture 
+- Portable and production-ready architecture 
 # Group Members 
 
-. Aditya Bairagi 
+- Aditya Bairagi 
 
-. Aparna Sharma 
+- Aparna Sharma 
 
-. Mimansa Kashyap 
+- Mimansa Kashyap 
 
-. Harsh Gupta 
+- Harsh Gupta 
 
-. Shubhanjali Roy 
+- Shubhanjali Roy 
 
-. Sandhya Patidar
+- Sandhya Patidar
 # Contribution 
 README file structured and improved by Aditya Bairagi
 
