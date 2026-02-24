@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body Gradient Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* Header */
+.header {
+  color: white;
+  text-align: center;
+  padding: 1.8rem 1rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Main Container */
+.container {
+  padding: 1rem;
+}
+
+/* Sports Grid */
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.2rem;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.2);
+}
+
+/* Sport Image */
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin: 0.6rem 0 0.3rem;
+  color: #1e3c72;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Button */
+.card button {
+  margin-top: 0.8rem;
+  padding: 0.65rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1e90ff, #0077cc);
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card button:hover {
+  background: linear-gradient(135deg, #005fa3, #004080);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #e0e0e0;
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+/* Auth Page Background */
+/* BACKGROUND */
+.auth-body {
+  
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #0a1f44, #12326b);
+}
+
+
+/* CARD */
+.auth-container {
+  background: #ffffff;
+  padding: 2.2rem;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
+  
+
+}
+
+/* TITLE */
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+  color: #0a1f44;
+}
+
+/* INPUT FIELD */
+.field {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #cfd7e3;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  color: #777;
+  font-size: 0.85rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.2s ease;
+  background: #fff;
+  padding: 0 5px;
+}
+
+/* FLOATING EFFECT */
+.field input:focus + label,
+.field input:valid + label {
+  top: -6px;
+  font-size: 0.75rem;
+  color: #0a1f44;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 22px;
+  background: #0a1f44;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #081a38;
+}
+
+/* LINKS */
+.switch, .link, .info {
+  font-size: 0.85rem;
+  margin-top: 0.8rem;
+  color: #555;
+}
+
+.switch span, .link {
+  color: #0a1f44;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}

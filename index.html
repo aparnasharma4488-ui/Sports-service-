@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sport Service App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>🏆 Turf Booking System</h1>
+    <p>Book your favorite sports Turf easily</p>
+  </header>
+
+  <!-- Sports Section -->
+  <main class="container">
+    <div class="sports-grid" id="sportsGrid">
+      <!-- Cards injected by JS -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Sport Service App</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <div class="auth-body">
+
+
+  <div class="auth-container">
+
+    <h2 id="formTitle">Login</h2>
+
+    <!-- LOGIN -->
+    <form id="loginForm">
+      <div class="field">
+        <input type="email" required id="loginEmail" />
+        <label>Email</label>
+      </div>
+
+      <div class="field">
+        <input type="password" required id="loginPassword" />
+        <label>Password</label>
+      </div>
+
+      <p class="link" onclick="showForgot()">Forgot Password?</p>
+
+      <button type="submit">Login</button>
+
+      <p class="switch">
+        Don’t have an account?
+        <span onclick="showSignup()">Sign up</span>
+      </p>
+    </form>
+
+    <!-- SIGNUP -->
+    <form id="signupForm" class="hidden">
+      <div class="field">
+        <input type="text" required id="signupName" />
+        <label>Full Name</label>
+      </div>
+
+      <div class="field">
+        <input type="email" required id="signupEmail" />
+        <label>Email</label>
+      </div>
+
+      <div class="field">
+        <input type="password" required id="signupPassword" />
+        <label>Password</label>
+      </div>
+
+      <button type="submit">Send OTP</button>
+
+      <p class="switch">
+        Already registered?
+        <span onclick="showLogin()">Login</span>
+      </p>
+    </form>
+
+    <!-- OTP VERIFICATION -->
+    <form id="otpForm" class="hidden">
+      <p class="info">Enter the OTP sent to your email</p>
+
+      <div class="field">
+        <input type="text" required maxlength="6" id="otpCode" />
+        <label>OTP</label>
+      </div>
+
+      <button type="submit">Verify OTP</button>
+    </form>
+
+    <!-- FORGOT PASSWORD -->
+    <form id="forgotForm" class="hidden">
+      <p class="info">Reset your password</p>
+
+      <div class="field">
+        <input type="email" required id="forgotEmail" />
+        <label>Email</label>
+      </div>
+
+      <button type="submit">Send Reset Link</button>
+
+      <p class="switch">
+        Back to <span onclick="showLogin()">Login</span>
+      </p>
+    </form>
+
+  </div>
+  </div>
+
+  <script src="auth.js"></script>
+  <input type="email" id="email">
+<button onclick="sendOTP()">Send OTP</button>
+
+<script>
+function sendOTP() {
+  const email = document.getElementById("email").value;
+
+  fetch("http://127.0.0.1:5000/send-otp", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ email })
+  })
+  .then(res => res.json())
+  .then(data => alert(data.message))
+  .catch(err => console.error(err));
+}
+</script>
+
+</body>
+</html>
